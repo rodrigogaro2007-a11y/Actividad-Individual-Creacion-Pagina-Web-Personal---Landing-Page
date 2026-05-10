@@ -521,3 +521,95 @@ header .navbar li a:hover {
         font-size: 2.2rem;
     }
 }
+
+/* ===== SECCIÓN CV ===== */
+
+.cv-section {
+    padding: 80px 20px;
+    background: #fafafa;
+}
+
+.cv-section h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+.cv-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+}
+
+/* Columna izquierda */
+.cv-left {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.cv-left h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.cv-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.cv-list li {
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+}
+
+/* Columna derecha */
+.cv-right {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.cv-right h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.cv-item {
+    margin-bottom: 25px;
+}
+
+.cv-item h4 {
+    margin-bottom: 5px;
+    color: #222;
+}
+
+.cv-date {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 992px) {
+    .cv-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .cv-right, .cv-left {
+        padding: 25px;
+    }
+
+    .cv-section h2 {
+        font-size: 2.2rem;
+    }
+}
