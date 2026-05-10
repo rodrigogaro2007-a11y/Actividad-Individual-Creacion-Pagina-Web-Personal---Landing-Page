@@ -721,7 +721,8 @@ header .navbar li a:hover {
 
 .projects-intro {
     max-width: 700px;
-    margin: 0 auto 50px auto;
+    margin-top: 10px;
+    margin-bottom: 40px;
     font-size: 1.15rem;
     color: #555;
 }
