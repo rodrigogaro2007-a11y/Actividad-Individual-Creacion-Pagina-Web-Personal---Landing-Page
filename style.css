@@ -705,7 +705,7 @@ header .navbar li a:hover {
     }
 }
 
-/* ===== SECCIÓN PROYECTOS MIXTA ===== */
+/* ===== SECCIÓN PROYECTOS ===== */
 
 .projects-mixed {
     padding: 80px 20px;
@@ -726,15 +726,17 @@ header .navbar li a:hover {
     color: #555;
 }
 
-/* HORIZONTAL EN PANTALLAS GRANDES */
+/* PROYECTOS DEBAJO DEL TEXTO */
 .projects-row {
     display: flex;
-    gap: 30px;
     justify-content: center;
+    gap: 30px;
+    flex-wrap: nowrap;
     overflow-x: auto;
     padding-bottom: 20px;
 }
 
+/* TARJETAS */
 .project-card {
     min-width: 300px;
     max-width: 320px;
@@ -787,7 +789,7 @@ header .navbar li a:hover {
 
 /* ===== RESPONSIVE ===== */
 
-/* 992px → Se ponen en 2 columnas */
+/* 992px → 2 columnas */
 @media (max-width: 992px) {
     .projects-row {
         flex-wrap: wrap;
@@ -801,7 +803,7 @@ header .navbar li a:hover {
     }
 }
 
-/* 576px → Se ponen en vertical */
+/* 576px → 1 columna */
 @media (max-width: 576px) {
     .project-card {
         min-width: 100%;
