@@ -30,63 +30,63 @@
         </header>
         <div class="contenido">
             <section id="contacto" class="contact-section">
-                <h2>Contacto</h2>
+                <section id="contacto" class="contact-vertical">
 
-                <p class="contact-intro">
+            <!-- Texto superior -->
+            <div class="contact-header">
+                <h2>Contacto</h2>
+                <p>
                     Si deseas ponerte en contacto conmigo para colaborar, solicitar información o conocer más sobre mis proyectos,
-                    puedes enviarme un mensaje a través del siguiente formulario.
+                    puedes enviarme un mensaje a través del siguiente formulario. Responderé lo antes posible.
                 </p>
             
-                <form class="contact-form">
-                
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="nombre">Nombre completo</label>
-                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-                        </div>
-                    
-                        <div class="form-group">
-                            <label for="telefono">Teléfono</label>
-                            <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000">
-                        </div>
-                    </div>
-                
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="email">Correo electrónico</label>
-                            <input type="email" id="email" name="email" placeholder="tucorreo@example.com" required>
-                        </div>
-                    
-                        <div class="form-group">
-                            <label for="asunto">Asunto</label>
-                            <input type="text" id="asunto" name="asunto" placeholder="Motivo del mensaje" required>
-                        </div>
+                <ul class="contact-details">
+                    <li><strong>Email:</strong> rodrigo@example.com</li>
+                    <li><strong>Ubicación:</strong> Madrid, España</li>
+                    <li><strong>Disponibilidad:</strong> Lunes a Viernes</li>
+                </ul>
+            </div>
+        
+            <!-- Formulario inferior -->
+            <form class="contact-form">
+            
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
                     </div>
                 
                     <div class="form-group">
-                        <label for="motivo">Motivo del contacto</label>
-                        <select id="motivo" name="motivo" required>
-                            <option value="">Selecciona una opción</option>
-                            <option value="colaboracion">Colaboración</option>
-                            <option value="informacion">Solicitar información</option>
-                            <option value="proyecto">Propuesta de proyecto</option>
-                            <option value="otro">Otro</option>
-                        </select>
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="tucorreo@example.com" required>
                     </div>
-                
-                    <div class="form-group">
-                        <label for="mensaje">Mensaje</label>
-                        <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
-                    </div>
-                
-                    <div class="form-group checkbox-group">
-                        <input type="checkbox" id="privacidad" required>
-                        <label for="privacidad">Acepto la política de privacidad y el tratamiento de mis datos.</label>
-                    </div>
-                
-                    <button type="submit" class="btn-submit">Enviar formulario</button>
-                    <button type="reset" class="btn-reset">Borrar formulario</button>
-                </form>
+                </div>
+            
+                <div class="form-group">
+                    <label for="motivo">Motivo del contacto</label>
+                    <select id="motivo" name="motivo" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="colaboracion">Colaboración</option>
+                        <option value="informacion">Solicitar información</option>
+                        <option value="proyecto">Propuesta de proyecto</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+            
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+            
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="privacidad" required>
+                    <label for="privacidad">Acepto la política de privacidad.</label>
+                </div>
+            
+                <button type="submit" class="btn-submit">Enviar mensaje</button>
+                <button type="reset" class="btn-reset">Limpiar formulario</button>
+            </form>
+        
             </section>
         </div>
         <div class="copyright">
