@@ -799,7 +799,7 @@ header .navbar li a:hover {
 
     .project-content {
         width: 100%;
-        text-align: center;
+        text-align: left;
     }
 }
 
