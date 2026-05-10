@@ -398,7 +398,23 @@ header .navbar li a:hover {
     transition: 0.3s ease;
 }
 
+.btn-reset {
+    width: 100%;
+    padding: 15px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
 .btn-submit:hover {
+    background: #555;
+}
+
+.btn-reset:hover {
     background: #555;
 }
 
