@@ -705,15 +705,15 @@ header .navbar li a:hover {
     }
 }
 
-/* ===== SECCIÓN PROYECTOS HORIZONTAL ===== */
+/* ===== SECCIÓN PROYECTOS MIXTA ===== */
 
-.projects-horizontal {
+.projects-mixed {
     padding: 80px 20px;
     background: #ffffff;
     text-align: center;
 }
 
-.projects-horizontal h2 {
+.projects-mixed h2 {
     font-size: 2.6rem;
     margin-bottom: 20px;
     color: #222;
@@ -726,17 +726,15 @@ header .navbar li a:hover {
     color: #555;
 }
 
-/* Fila horizontal */
+/* HORIZONTAL EN PANTALLAS GRANDES */
 .projects-row {
     display: flex;
-    justify-content: center;
     gap: 30px;
-    flex-wrap: nowrap;
+    justify-content: center;
     overflow-x: auto;
     padding-bottom: 20px;
 }
 
-/* Tarjetas */
 .project-card {
     min-width: 300px;
     max-width: 320px;
@@ -789,19 +787,28 @@ header .navbar li a:hover {
 
 /* ===== RESPONSIVE ===== */
 
+/* 992px → Se ponen en 2 columnas */
 @media (max-width: 992px) {
     .projects-row {
         flex-wrap: wrap;
         justify-content: center;
+        overflow-x: hidden;
+    }
+
+    .project-card {
+        min-width: 45%;
+        max-width: 45%;
     }
 }
 
+/* 576px → Se ponen en vertical */
 @media (max-width: 576px) {
     .project-card {
         min-width: 100%;
+        max-width: 100%;
     }
 
-    .projects-horizontal h2 {
+    .projects-mixed h2 {
         font-size: 2.2rem;
     }
 }
