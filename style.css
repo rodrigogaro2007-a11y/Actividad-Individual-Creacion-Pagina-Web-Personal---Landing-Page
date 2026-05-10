@@ -751,7 +751,7 @@ header .navbar li a:hover {
 }
 
 .project-item img {
-    width: 35%;
+    width: 100%;
     height: 180px;
     object-fit: cover;
     border-radius: 10px;
