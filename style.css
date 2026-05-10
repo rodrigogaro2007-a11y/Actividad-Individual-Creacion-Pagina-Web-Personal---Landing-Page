@@ -362,9 +362,7 @@ header .navbar li a:hover {
     color: #333;
 }
 
-.form-group input,
-.form-group textarea,
-.form-group select {
+.form-group input, .form-group textarea, .form-group select {
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -372,9 +370,7 @@ header .navbar li a:hover {
     transition: 0.3s ease;
 }
 
-.form-group input:focus,
-.form-group textarea:focus,
-.form-group select:focus {
+.form-group input:focus, .form-group textarea:focus, .form-group select:focus {
     border-color: #333;
     outline: none;
 }
