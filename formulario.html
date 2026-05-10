@@ -29,7 +29,65 @@
             </ul>
         </header>
         <div class="contenido">
+            <section id="contacto" class="contact-section">
+                <h2>Contacto</h2>
 
+                <p class="contact-intro">
+                    Si deseas ponerte en contacto conmigo para colaborar, solicitar información o conocer más sobre mis proyectos,
+                    puedes enviarme un mensaje a través del siguiente formulario.
+                </p>
+            
+                <form class="contact-form">
+                
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000">
+                        </div>
+                    </div>
+                
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="tucorreo@example.com" required>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="asunto">Asunto</label>
+                            <input type="text" id="asunto" name="asunto" placeholder="Motivo del mensaje" required>
+                        </div>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="motivo">Motivo del contacto</label>
+                        <select id="motivo" name="motivo" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="colaboracion">Colaboración</option>
+                            <option value="informacion">Solicitar información</option>
+                            <option value="proyecto">Propuesta de proyecto</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    </div>
+                
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="privacidad" required>
+                        <label for="privacidad">Acepto la política de privacidad y el tratamiento de mis datos.</label>
+                    </div>
+                
+                    <button type="submit" class="btn-submit">Enviar formulario</button>
+                    <button type="reset" class="btn-reset">Borrar formulario</button>
+                </form>
+            </section>
         </div>
         <div class="copyright">
             <p>&copy; Web Personal creada para la materia de Lenguaje de Marcas <br> de DAW</p>
